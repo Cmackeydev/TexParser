@@ -3,8 +3,7 @@
 from os import path
 import re
 
-class FileReaderError(Exception):
-	pass
+class FileReaderError(Exception):pass
 
 class FileReader(object):
 	#This pbject represents the file reader
