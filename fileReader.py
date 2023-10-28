@@ -16,10 +16,10 @@ class FileReader(object):
 
 	def __str__(self) -> str:
 		return f'fichier {self.file_stream.name}'
+	
 	def __valid__(self,filename:str)->bool:
 		if not re.search(r'\.tex$',filename):return False
 		return True
 
 	def read(self)->str:
-		if not self.__valid__():return None
 		return self.file_stream.read()
