@@ -18,4 +18,5 @@ class TexParser(object):
     def __repr__(self) -> str:
         return self.__str__()
         
-
+    def parse(self)->None:
+        pass
